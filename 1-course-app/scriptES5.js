@@ -17,10 +17,10 @@ UI.prototype.addCourseToList = function(course){
     var html = `
     
     <tr>
-        <td><img src="img/${course.image}"/></td>
+        <td><img scr="img/${course.image}"/></td>
         <td>${course.title}</td>
         <td>${course.instructor}</td>
-        <td><a href="#" class="btn btn-danger btn-sm">Delete<a/></td>
+        <td><a href="#" class="btn btn-danger btn-sm delete">Delete<a/></td>
     
     </tr>
     
@@ -34,6 +34,12 @@ UI.prototype.clearControls = function(){
     const title = document.getElementById('title').value="";
     const instructor = document.getElementById('instructor').value="";
     const image = document.getElementById('image').value="";
+
+}
+UI.prototype.deleteCourse=function(item){
+    if (item.classList.contains('delete')){
+        item.parentElement.parentElement.remove();
+    }
 
 }
 
@@ -62,4 +68,11 @@ document.getElementById('new-course').addEventListener('submit',function(e){
 
 
     e.preventDefault();
+});
+
+document.getElementById('course-list').addEventListener('click',function(e){
+    
+    const ui = new UI();
+    ui.deleteCourse(e.target);
+
 });
