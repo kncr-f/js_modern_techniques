@@ -17,7 +17,7 @@ UI.prototype.addCourseToList = function(course){
     var html = `
     
     <tr>
-        <td><img scr="img/${course.image}"/></td>
+        <td><img scr="img/${course.image}"></td>
         <td>${course.title}</td>
         <td>${course.instructor}</td>
         <td><a href="#" class="btn btn-danger btn-sm delete">Delete<a/></td>
