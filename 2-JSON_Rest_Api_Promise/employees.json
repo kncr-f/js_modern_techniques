@@ -1,0 +1,26 @@
+[
+{
+    "firstName" : "Fatih",
+    "lastName" : "Kincir",
+    "age" : 34,
+    "retired":false
+},
+{
+    "firstName" : "Zelis",
+    "lastName" : "Kincir",
+    "age" : 30,
+    "retired":false
+},
+{
+    "firstName" : "Ela",
+    "lastName" : "Kincir",
+    "age" : 2,
+    "retired":false
+},
+{
+    "firstName" : "Selim",
+    "lastName" : "Kincir",
+    "age" : 4,
+    "retired":false
+}
+]
