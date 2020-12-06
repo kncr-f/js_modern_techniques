@@ -7,7 +7,7 @@ function getOne(){
 
     var xhr= new XMLHttpRequest();
    
-    xhr.open('GET',url,true);
+    xhr.open('GET',url,true); 
    
     xhr.onload = function (){
        if(this.status ===200){
